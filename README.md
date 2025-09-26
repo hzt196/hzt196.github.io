@@ -1,8 +1,25 @@
+<!DOCTYPE html>
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>和子腾 - 个人简历</title>
+    <title>和子腾 - 个人简历 | hzt196.github.io</title>
+    <meta name="description" content="和子腾的个人简历，展示专业技能、项目经验和教育背景">
+    <meta name="keywords" content="和子腾,简历,前端开发,Java,Python,北京邮电大学">
+    <meta name="author" content="和子腾">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://hzt196.github.io/">
+    <meta property="og:title" content="和子腾 - 个人简历">
+    <meta property="og:description" content="和子腾的个人简历，展示专业技能、项目经验和教育背景">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://hzt196.github.io/">
+    <meta property="twitter:title" content="和子腾 - 个人简历">
+    <meta property="twitter:description" content="和子腾的个人简历，展示专业技能、项目经验和教育背景">
+    
     <style>
         * {
             margin: 0;
@@ -46,6 +63,26 @@
             bottom: 0;
             background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="10" cy="60" r="0.5" fill="white" opacity="0.1"/><circle cx="90" cy="40" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
             opacity: 0.3;
+        }
+
+        .github-link {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(255,255,255,0.1);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+
+        .github-link:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
         }
 
         .header-content {
@@ -600,7 +637,44 @@
             grid-column: 1 / -1;
         }
 
-        
+        .footer {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 20px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-2px);
+        }
+
+        .footer-text {
+            opacity: 0.8;
+            font-size: 0.9em;
+        }
 
         /* 响应式设计 - 大屏幕优化 */
         @media (min-width: 1600px) {
@@ -1025,6 +1099,24 @@
             }
         }
 
+        /* GitHub Pages 移动端优化 */
+        @media (max-width: 768px) {
+            .github-link {
+                top: 15px;
+                right: 15px;
+                padding: 8px 15px;
+                font-size: 0.8em;
+            }
+            
+            .footer-links {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .footer-links a {
+                padding: 8px 15px;
+            }
+        }
 
         .fade-in {
             animation: fadeIn 1.2s ease-in;
@@ -1079,21 +1171,40 @@
             width: 300px;
             height: 300px;
         }
+
+        .ripple-effect {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.4);
+            transform: scale(0);
+            animation: ripple-animation 0.6s linear;
+            pointer-events: none;
+        }
+
+        @keyframes ripple-animation {
+            to {
+                transform: scale(4);
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container fade-in">
         <header class="header">
+            <a href="https://github.com/hzt196" class="github-link" target="_blank">
+                <i>📱</i> GitHub
+            </a>
             <div class="header-content">
                 <h1 class="name">和子腾</h1>
-        
+                <p class="title">计算机科学与技术专业 | 北京邮电大学</p>
                 <div class="contact-info">
                     <div class="contact-item ripple">
                         <span>👨</span>   
                         <span>15188830026 (同微信)</span>
                     </div>
                     <div class="contact-item ripple">
-                        <span>📧</span>
+                        <span>��</span>
                         <span>heziteng666@bupt.edu.cn</span>
                     </div>
                     <div class="contact-item ripple">
@@ -1289,6 +1400,19 @@
                 </div>
             </div>
         </main>
+        
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-links">
+                    <a href="https://github.com/hzt196" target="_blank">GitHub</a>
+                    <a href="mailto:heziteng666@bupt.edu.cn">Email</a>
+                    <a href="tel:15188830026">Phone</a>
+                </div>
+                <div class="footer-text">
+                    <p>&copy; 2024 和子腾. 个人简历 | 托管于 GitHub Pages</p>
+                </div>
+            </div>
+        </footer>
     </div>
 
     <script>
@@ -1349,23 +1473,5 @@
             }
         });
     </script>
-
-    <style>
-        .ripple-effect {
-            position: absolute;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.4);
-            transform: scale(0);
-            animation: ripple-animation 0.6s linear;
-            pointer-events: none;
-        }
-
-        @keyframes ripple-animation {
-            to {
-                transform: scale(4);
-                opacity: 0;
-            }
-        }
-    </style>
 </body>
 </html>
