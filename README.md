@@ -1201,7 +1201,7 @@
             </a>
             <div class="header-content">
                 <h1 class="name">和子腾</h1>
-                <p class="title">计算机科学与技术专业 | 北京邮电大学</p>
+                <p class="title">电信工程 | 北京邮电大学</p>
                 <div class="contact-info">
                     <div class="contact-item ripple">
                         <span>👨</span>   
