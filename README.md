@@ -661,7 +661,7 @@
                     </div>
                     <div class="info-item ripple">
                         <div class="info-label">学校</div>
-                        <div class="info-value">北京邮电大学<br>英国玛丽女王大学</div>
+                        <div class="info-value">北京邮电大学</div>
                     </div>
                 </div>
             </section>
