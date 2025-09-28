@@ -1204,7 +1204,7 @@
                 <p class="title">电信工程 | 北京邮电大学</p>
                 <div class="contact-info">
                     <div class="contact-item ripple">
-                        <span>👨</span>   
+                        <span>☎️</span>   
                         <span>15188830026 (同微信)</span>
                     </div>
                     <div class="contact-item ripple">
