@@ -622,6 +622,7 @@
                 GitHub
             </a>
             <div class="header-content">
+                <img src="hzt.jpg" alt="和子腾" class="profile-photo">
                 <h1 class="name">和子腾</h1>
                 <p class="title">电信工程及管理专业 | 北京邮电大学</p>
                 <div class="contact-info">
