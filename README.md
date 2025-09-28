@@ -7,6 +7,8 @@
     <meta name="description" content="和子腾的个人简历，展示专业技能、项目经验和教育背景">
     <meta name="keywords" content="和子腾,简历,前端开发,Java,Python,北京邮电大学">
     <meta name="author" content="和子腾">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://hzt196.github.io/">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -30,24 +32,26 @@
         body {
             font-family: 'Microsoft YaHei', 'PingFang SC', 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #c9d1d9;
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
             min-height: 100vh;
             overflow-x: hidden;
         }
 
         .container {
-            width: 100vw;
+            width: 100%;
+            max-width: 1600px;
             min-height: 100vh;
-            background: white;
+            background: #0d1117;
             display: flex;
             flex-direction: column;
             position: relative;
+            margin: 0 auto;
         }
 
         .header {
-            background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
-            color: white;
+            background: linear-gradient(135deg, #161b22 0%, #30363d 100%);
+            color: #c9d1d9;
             padding: 80px 40px;
             text-align: center;
             position: relative;
@@ -70,7 +74,7 @@
             top: 20px;
             right: 20px;
             background: rgba(255,255,255,0.1);
-            color: white;
+            color: #c9d1d9;
             padding: 10px 20px;
             border-radius: 25px;
             text-decoration: none;
@@ -96,7 +100,7 @@
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
             letter-spacing: 3px;
-            background: linear-gradient(45deg, #fff, #e3f2fd);
+            background: linear-gradient(45deg, #c9d1d9, #58a6ff);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -128,11 +132,11 @@
             display: flex;
             align-items: center;
             gap: 12px;
-            background: rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.05);
             padding: 18px 30px;
             border-radius: 50px;
             backdrop-filter: blur(15px);
-            border: 2px solid rgba(255,255,255,0.3);
+            border: 2px solid rgba(255,255,255,0.1);
             font-size: 1.1em;
             cursor: pointer;
             transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
@@ -147,7 +151,7 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
             transition: left 0.5s;
         }
 
@@ -158,8 +162,8 @@
         .contact-item:hover {
             transform: translateY(-3px) scale(1.05);
             box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            background: rgba(255,255,255,0.25);
-            border-color: rgba(255,255,255,0.5);
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.2);
         }
 
         .contact-item:active {
@@ -169,7 +173,7 @@
         .main-content {
             flex: 1;
             padding: 60px 40px;
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 100%);
         }
 
         .content-grid {
@@ -187,11 +191,11 @@
         }
 
         .section {
-            background: white;
+            background: #161b22;
             border-radius: 25px;
             padding: 35px;
             box-shadow: 0 15px 35px rgba(0,0,0,0.08);
-            border-left: 6px solid #3498db;
+            border-left: 6px solid #58a6ff;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             position: relative;
             overflow: hidden;
@@ -205,7 +209,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(52, 152, 219, 0.02) 0%, rgba(155, 89, 182, 0.02) 100%);
+            background: linear-gradient(135deg, rgba(88, 166, 255, 0.02) 0%, rgba(88, 166, 255, 0.02) 100%);
             opacity: 0;
             transition: opacity 0.3s ease;
         }
@@ -217,7 +221,7 @@
         .section:hover {
             transform: translateY(-8px) scale(1.02);
             box-shadow: 0 25px 50px rgba(0,0,0,0.15);
-            border-left-color: #e74c3c;
+            border-left-color: #f85149;
         }
 
         .section:active {
@@ -226,10 +230,10 @@
 
         .section-title {
             font-size: 2em;
-            color: #2c3e50;
+            color: #c9d1d9;
             margin-bottom: 25px;
             padding-bottom: 15px;
-            border-bottom: 4px solid #3498db;
+            border-bottom: 4px solid #58a6ff;
             position: relative;
             font-weight: 700;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
@@ -242,7 +246,7 @@
             left: 0;
             width: 80px;
             height: 4px;
-            background: linear-gradient(90deg, #e74c3c, #f39c12);
+            background: linear-gradient(90deg, #f85149, #f0883e);
             border-radius: 2px;
         }
 
@@ -253,7 +257,7 @@
             right: 0;
             width: 40px;
             height: 4px;
-            background: linear-gradient(90deg, #9b59b6, #3498db);
+            background: linear-gradient(90deg, #a371f7, #58a6ff);
             border-radius: 2px;
         }
 
@@ -264,11 +268,11 @@
         }
 
         .info-item {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            background: linear-gradient(135deg, #161b22 0%, #21262d 100%);
             padding: 25px;
             border-radius: 20px;
             text-align: center;
-            border: 3px solid #e9ecef;
+            border: 3px solid #30363d;
             transition: all 0.3s ease;
             cursor: pointer;
             position: relative;
@@ -282,7 +286,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(52, 152, 219, 0.1) 0%, rgba(155, 89, 182, 0.1) 100%);
+            background: linear-gradient(135deg, rgba(88, 166, 255, 0.1) 0%, rgba(88, 166, 255, 0.1) 100%);
             opacity: 0;
             transition: opacity 0.3s ease;
         }
@@ -294,7 +298,7 @@
         .info-item:hover {
             transform: translateY(-5px) scale(1.05);
             box-shadow: 0 15px 30px rgba(0,0,0,0.15);
-            border-color: #3498db;
+            border-color: #58a6ff;
         }
 
         .info-item:active {
@@ -303,7 +307,7 @@
 
         .info-label {
             font-weight: 700;
-            color: #2c3e50;
+            color: #c9d1d9;
             margin-bottom: 10px;
             font-size: 1.2em;
             position: relative;
@@ -311,7 +315,7 @@
         }
 
         .info-value {
-            color: #666;
+            color: #8b949e;
             font-size: 1.4em;
             font-weight: 600;
             position: relative;
@@ -323,14 +327,14 @@
         }
 
         .awards-list li {
-            background: linear-gradient(135deg, #fff5f5 0%, #fef2f2 100%);
+            background: linear-gradient(135deg, #21262d 0%, #30363d 100%);
             margin-bottom: 20px;
             padding: 25px;
             border-radius: 20px;
-            border-left: 5px solid #e74c3c;
+            border-left: 5px solid #f85149;
             position: relative;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            border: 2px solid #fecaca;
+            border: 2px solid #484f58;
             cursor: pointer;
             overflow: hidden;
         }
@@ -342,7 +346,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(231, 76, 60, 0.1) 0%, rgba(243, 156, 18, 0.1) 100%);
+            background: linear-gradient(135deg, rgba(248, 81, 73, 0.1) 0%, rgba(248, 81, 73, 0.1) 100%);
             opacity: 0;
             transition: opacity 0.3s ease;
         }
@@ -353,8 +357,8 @@
 
         .awards-list li:hover {
             transform: translateX(15px) scale(1.02);
-            box-shadow: 0 10px 25px rgba(231, 76, 60, 0.25);
-            border-left-color: #f39c12;
+            box-shadow: 0 10px 25px rgba(248, 81, 73, 0.25);
+            border-left-color: #f0883e;
         }
 
         .awards-list li:active {
@@ -367,7 +371,7 @@
             left: -25px;
             top: 50%;
             transform: translateY(-50%);
-            background: white;
+            background: #161b22;
             padding: 12px;
             border-radius: 50%;
             box-shadow: 0 5px 15px rgba(0,0,0,0.15);
@@ -381,19 +385,19 @@
         }
 
         .education-item {
-            background: linear-gradient(135deg, #f0fff4 0%, #f0fdf4 100%);
+            background: linear-gradient(135deg, #21262d 0%, #30363d 100%);
             padding: 30px;
             border-radius: 25px;
-            border-left: 5px solid #27ae60;
-            border: 2px solid #bbf7d0;
+            border-left: 5px solid #238636;
+            border: 2px solid #3fb950;
             transition: all 0.3s ease;
             cursor: pointer;
         }
 
         .education-item:hover {
             transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 15px 30px rgba(39, 174, 96, 0.2);
-            border-left-color: #2ecc71;
+            box-shadow: 0 15px 30px rgba(35, 134, 54, 0.2);
+            border-left-color: #2da44e;
         }
 
         .education-header {
@@ -406,12 +410,12 @@
         .school {
             font-size: 1.5em;
             font-weight: 700;
-            color: #2c3e50;
+            color: #c9d1d9;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
 
         .degree {
-            color: #666;
+            color: #8b949e;
             font-style: italic;
             font-size: 1.2em;
             font-weight: 500;
@@ -425,20 +429,20 @@
         }
 
         .course-tag {
-            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
-            color: white;
+            background: linear-gradient(135deg, #58a6ff 0%, #388bfd 100%);
+            color: #0d1117;
             padding: 10px 20px;
             border-radius: 25px;
             font-size: 0.95em;
             font-weight: 600;
-            box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
+            box-shadow: 0 4px 10px rgba(88, 166, 255, 0.3);
             transition: all 0.3s ease;
             cursor: pointer;
         }
 
         .course-tag:hover {
             transform: translateY(-3px) scale(1.1);
-            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.4);
+            box-shadow: 0 8px 20px rgba(88, 166, 255, 0.4);
         }
 
         .course-tag:active {
@@ -446,12 +450,12 @@
         }
 
         .project-item {
-            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+            background: linear-gradient(135deg, #21262d 0%, #30363d 100%);
             padding: 30px;
             border-radius: 25px;
             margin-bottom: 30px;
-            border-left: 5px solid #9b59b6;
-            border: 2px solid #d8b4fe;
+            border-left: 5px solid #a371f7;
+            border: 2px solid #d29922;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             cursor: pointer;
             position: relative;
@@ -465,7 +469,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(155, 89, 182, 0.1) 0%, rgba(52, 152, 219, 0.1) 100%);
+            background: linear-gradient(135deg, rgba(163, 113, 247, 0.1) 0%, rgba(88, 166, 255, 0.1) 100%);
             opacity: 0;
             transition: opacity 0.3s ease;
         }
@@ -476,8 +480,8 @@
 
         .project-item:hover {
             transform: translateY(-8px) scale(1.03);
-            box-shadow: 0 20px 40px rgba(155, 89, 182, 0.25);
-            border-left-color: #e74c3c;
+            box-shadow: 0 20px 40px rgba(163, 113, 247, 0.25);
+            border-left-color: #f85149;
         }
 
         .project-item:active {
@@ -494,28 +498,28 @@
         .project-title {
             font-size: 1.4em;
             font-weight: 700;
-            color: #2c3e50;
+            color: #c9d1d9;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
 
         .project-period {
-            color: #666;
+            color: #8b949e;
             font-size: 0.95em;
-            background: rgba(155, 89, 182, 0.15);
+            background: rgba(163, 113, 247, 0.15);
             padding: 8px 16px;
             border-radius: 20px;
             font-weight: 600;
         }
 
         .project-role {
-            color: #e74c3c;
+            color: #f85149;
             font-weight: 700;
             margin-bottom: 20px;
             font-size: 1.2em;
         }
 
         .project-description {
-            color: #666;
+            color: #8b949e;
             line-height: 1.8;
             font-size: 1.1em;
         }
@@ -527,23 +531,23 @@
         }
 
         .skill-category {
-            background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+            background: linear-gradient(135deg, #21262d 0%, #30363d 100%);
             padding: 30px;
             border-radius: 20px;
-            border-left: 5px solid #f39c12;
-            border: 2px solid #fed7aa;
+            border-left: 5px solid #f0883e;
+            border: 2px solid #d29922;
             transition: all 0.3s ease;
             cursor: pointer;
         }
 
         .skill-category:hover {
             transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 15px 30px rgba(243, 156, 18, 0.2);
-            border-left-color: #e67e22;
+            box-shadow: 0 15px 30px rgba(240, 136, 62, 0.2);
+            border-left-color: #d29922;
         }
 
         .skill-category h4 {
-            color: #2c3e50;
+            color: #c9d1d9;
             margin-bottom: 20px;
             font-size: 1.3em;
             font-weight: 700;
@@ -557,20 +561,20 @@
         }
 
         .skill-tag {
-            background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
-            color: white;
+            background: linear-gradient(135deg, #f0883e 0%, #d29922 100%);
+            color: #0d1117;
             padding: 10px 20px;
             border-radius: 25px;
             font-size: 0.8em;
             font-weight: 600;
-            box-shadow: 0 4px 10px rgba(243, 156, 18, 0.3);
+            box-shadow: 0 4px 10px rgba(240, 136, 62, 0.3);
             transition: all 0.3s ease;
             cursor: pointer;
         }
 
         .skill-tag:hover {
             transform: translateY(-3px) scale(1.1);
-            box-shadow: 0 8px 20px rgba(243, 156, 18, 0.4);
+            box-shadow: 0 8px 20px rgba(240, 136, 62, 0.4);
         }
 
         .skill-tag:active {
@@ -578,39 +582,39 @@
         }
 
         .self-evaluation {
-            background: linear-gradient(135deg, #e6f3ff 0%, #cce7ff 100%);
+            background: linear-gradient(135deg, #21262d 0%, #30363d 100%);
             padding: 35px;
             border-radius: 25px;
-            border-left: 5px solid #17a2b8;
+            border-left: 5px solid #39d353;
             font-style: italic;
-            color: #495057;
+            color: #8b949e;
             line-height: 1.9;
             font-size: 1.15em;
-            border: 2px solid #b3d9ff;
+            border: 2px solid #238636;
             transition: all 0.3s ease;
             cursor: pointer;
         }
 
         .self-evaluation:hover {
             transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 15px 30px rgba(23, 162, 184, 0.2);
-            border-left-color: #20c997;
+            box-shadow: 0 15px 30px rgba(57, 211, 83, 0.2);
+            border-left-color: #238636;
         }
 
         .internship-item {
-            background: linear-gradient(135deg, #fff4e6 0%, #ffeaa7 100%);
+            background: linear-gradient(135deg, #21262d 0%, #30363d 100%);
             padding: 30px;
             border-radius: 25px;
-            border-left: 5px solid #fd7e14;
-            border: 2px solid #fdcb6e;
+            border-left: 5px solid #f0883e;
+            border: 2px solid #d29922;
             transition: all 0.3s ease;
             cursor: pointer;
         }
 
         .internship-item:hover {
             transform: translateY(-5px) scale(1.02);
-            box-shadow: 0 15px 30px rgba(253, 126, 20, 0.2);
-            border-left-color: #ff8c00;
+            box-shadow: 0 15px 30px rgba(240, 136, 62, 0.2);
+            border-left-color: #d29922;
         }
 
         .internship-header {
@@ -623,12 +627,12 @@
         .company {
             font-size: 1.4em;
             font-weight: 700;
-            color: #2c3e50;
+            color: #c9d1d9;
             text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
         }
 
         .position {
-            color: #e74c3c;
+            color: #f85149;
             font-weight: 700;
             font-size: 1.2em;
         }
@@ -638,8 +642,8 @@
         }
 
         .footer {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-            color: white;
+            background: linear-gradient(135deg, #161b22 0%, #21262d 100%);
+            color: #c9d1d9;
             text-align: center;
             padding: 30px;
             margin-top: 50px;
@@ -658,16 +662,16 @@
         }
 
         .footer-links a {
-            color: white;
+            color: #c9d1d9;
             text-decoration: none;
             padding: 10px 20px;
             border-radius: 20px;
-            background: rgba(255,255,255,0.1);
+            background: rgba(255,255,255,0.05);
             transition: all 0.3s ease;
         }
 
         .footer-links a:hover {
-            background: rgba(255,255,255,0.2);
+            background: rgba(255,255,255,0.1);
             transform: translateY(-2px);
         }
 
@@ -1095,7 +1099,7 @@
             }
             
             .contact-item {
-                border: 1px solid rgba(255,255,255,0.3);
+                border: 1px solid rgba(255,255,255,0.1);
             }
         }
 
@@ -1162,7 +1166,7 @@
             width: 0;
             height: 0;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.1);
             transform: translate(-50%, -50%);
             transition: width 0.6s, height 0.6s;
         }
@@ -1175,7 +1179,7 @@
         .ripple-effect {
             position: absolute;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.4);
+            background: rgba(255, 255, 255, 0.2);
             transform: scale(0);
             animation: ripple-animation 0.6s linear;
             pointer-events: none;
@@ -1204,7 +1208,7 @@
                         <span>15188830026 (同微信)</span>
                     </div>
                     <div class="contact-item ripple">
-                        <span>��</span>
+                        <span>📧</span>
                         <span>heziteng666@bupt.edu.cn</span>
                     </div>
                     <div class="contact-item ripple">
